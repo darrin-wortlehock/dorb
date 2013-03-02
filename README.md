@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/exempla/dorb.png)](https://travis-ci.org/exempla/dorb)
 [![Code Climate](https://codeclimate.com/github/exempla/dorb.png)](https://codeclimate.com/github/exempla/dorb)
 
-Interact with the Digital Ocean API in an idiomatic ruby way.
+Interact with the [Digital Ocean](http://www.digitalocean.com) [API](http://www.digitalocean.com/api) in an idiomatic ruby way.
 
 DORB exposes the Digital Ocean API as Ruby objects, has 100% test coverage and supports the entire API.
 
