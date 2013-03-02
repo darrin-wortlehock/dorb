@@ -124,14 +124,61 @@ This method destroys one of your droplets - this is irreversible.
 
 ### Regions
 
+##### All Regions
+This method will return all the available regions within the Digital Ocean cloud.
+
+    DORB::Regions.all
 
 ### Images
 
+##### All images
+This method returns all the available images that can be accessed by your client ID. You will have access to all public images by default, and any snapshots or backups that you have created in your own account.
+
+    DORB::Image.all
+
+##### Find image
+This method returns an image instance
+
+    DORB::Image.find name
+
+##### Destroy image
+This method allows you to destroy an image. There is no way to restore a deleted image so be careful and ensure your data is properly backed up.
+
+    image.destroy
 
 ### SSH Keys
 
+##### All SSH keys
+This method lists all the available public SSH keys in your account that can be added to a droplet.
+
+    DORB::SSHKey.all
+
+##### Find SSH key
+This method returns an SSHKey instance
+
+    DORB::SSHKey.find name
+
+##### Add SSH key
+This method allows you to add a new public SSH key to your account.
+
+    DORB::SSHKey.add name, ssh_key_pub
+
+##### Edit SSH key
+This method allows you to modify an existing public SSH key in your account.
+
+    ssh_key.edit ssh_key_pub
+
+##### Destroy SSH Key
+This method will delete the SSH key from your account.
+
+    ssh_key.destroy
 
 ### Sizes
+
+##### All Sizes
+This method returns all the available sizes that can be used to create a droplet.
+
+    DORB::Size.all
 
 
 ## Contributing
