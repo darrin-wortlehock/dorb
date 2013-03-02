@@ -5,11 +5,11 @@ require 'dorb/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "dorb"
-  spec.version       = Dorb::VERSION
+  spec.version       = DORB::VERSION
   spec.authors       = ["Darrin Wortlehock"]
   spec.email         = ["darrin@exempla.co.uk"]
-  spec.description   = %q{Digital Ocean Ruby Bindings}
-  spec.summary       = %q{Ruby library to abstract the Digital Ocean API}
+  spec.description   = %q{Interact with the Digital Ocean API in an idiomatic ruby way.}
+  spec.summary       = %q{DORB exposes the Digital Ocean API as Ruby objects, has 100% test coverage and supports the entire API.}
   spec.homepage      = "https://github.com/exempla/dorb"
   spec.license       = "MIT"
 
