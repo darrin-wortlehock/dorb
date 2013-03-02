@@ -7,8 +7,6 @@ Interact with the [Digital Ocean](http://www.digitalocean.com) [API](http://www.
 
 DORB exposes the Digital Ocean API as Ruby objects, has 100% test coverage and supports the entire API.
 
-[![Digital Ocean](https://www.digitalocean.com/assets/badges/digitalocean-vertical-eps.png)](http://www.digitalocean.com)
-
 ## Installation
 
 Add this line to your application's Gemfile:
