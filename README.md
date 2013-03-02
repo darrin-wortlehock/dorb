@@ -1,6 +1,6 @@
+# DORB - Digital Ocean Ruby Bindings
 [![Build Status](https://travis-ci.org/exempla/dorb.png)](https://travis-ci.org/exempla/dorb)
 [![Code Climate](https://codeclimate.com/github/exempla/dorb.png)](https://codeclimate.com/github/exempla/dorb)
-# DORB - Digital Ocean Ruby Bindings
 
 Interact with the Digital Ocean API in an idiomatic ruby way.
 
