@@ -1,6 +1,9 @@
 require 'rest-client'
+
+require 'dorb/core_ext/hash'
 require 'dorb/version'
 require 'dorb/config'
+require 'dorb/region'
 
 module DORB
   API_ENDPOINT = 'https://api.digitalocean.com'
