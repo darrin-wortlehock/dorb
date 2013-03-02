@@ -4,6 +4,8 @@
 
 Interact with the [Digital Ocean](http://www.digitalocean.com) [API](http://www.digitalocean.com/api) in an idiomatic ruby way.
 
+[![Digital Ocean Logo](https://www.digitalocean.com/assets/badges/digitalocean-horizontal-eps.png)](http://www.digitalocean.com)
+
 DORB exposes the Digital Ocean API as Ruby objects, has 100% test coverage and supports the entire API.
 
 ## Installation
