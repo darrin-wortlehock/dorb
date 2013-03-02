@@ -1,6 +1,6 @@
-# Dorb
+# Dorb - Digital Ocean Ruby Bindings
 
-TODO: Write a gem description
+Ruby library to abstract the Digital Ocean API
 
 ## Installation
 
