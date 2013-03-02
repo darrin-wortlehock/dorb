@@ -1,4 +1,4 @@
-# Dorb - Digital Ocean Ruby Bindings
+# DORB - Digital Ocean Ruby Bindings
 
 Ruby library to abstract the Digital Ocean API
 
