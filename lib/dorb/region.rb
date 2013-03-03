@@ -1,4 +1,4 @@
-require 'JSON'
+require 'json'
 require 'rest_client'
 
 module DORB
