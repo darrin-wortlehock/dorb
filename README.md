@@ -126,13 +126,6 @@ This method destroys one of your droplets - this is irreversible.
 
     droplet.destroy
 
-### Regions
-
-##### All Regions
-This method will return all the available regions within the Digital Ocean cloud.
-
-    DORB::Region.all
-
 ### Images
 
 ##### All images
@@ -187,6 +180,13 @@ This method will delete the SSH key from your account.
 This method returns all the available sizes that can be used to create a droplet.
 
     DORB::Size.all
+
+### Regions
+
+##### All Regions
+This method will return all the available regions within the Digital Ocean cloud.
+
+    DORB::Region.all
 
 
 ## Contributing
