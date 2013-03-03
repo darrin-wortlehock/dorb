@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.digitalocean.com/regions?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 03 Mar 2013 00:56:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"6f472d2a870e01c5f53d1892d1d463d8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTRhOGE2NzVlYmRkOGIxZTljYzNhNTJiNWYyZDdkMzdkBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn9odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9yZWdpb25zP2NsaWVudF9pZD04NFU5cUh3ZTJONzNkRW9QRlZxS3omYXBpX2tleT1xUThtcFJpRVlnM3VPNk9yTFRUZUpEMUR2UEdFUWhWbU1lSHZEcjNkbQY7AEY%3D--09bd626d835b0a0cbc631f57db02b8a567407ef0;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 4f60f0c2061d9d53bbf4d8b36efa5a95
+      X-Runtime:
+      - '0.634224'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","regions":[{"id":1,"name":"New York 1"},{"id":2,"name":"Amsterdam
+        1"}]}'
+    http_version: 
+  recorded_at: Sun, 03 Mar 2013 00:56:08 GMT
+recorded_with: VCR 2.4.0

@@ -1,13 +1,13 @@
 module DORB
   module Config
-    attr_writer :client_key, :api_key
+    attr_writer :client_id, :api_key
 
-    def client_key
-      if @client_key
-        @client_key
+    def client_id
+      if @client_id
+        @client_id
       else
         raise DORB::ConfigurationError.new \
-          "Cannot complete request. Please set client_key with DORB::Config.setup first!"
+          "Cannot complete request. Please set client_id with DORB::Config.setup first!"
       end
     end
 
@@ -26,10 +26,10 @@ module DORB
       end
     end
 
-    def method_missing(meth, *args, &blk)
-      const = meth.to_s.upcase
-      DORB.const_set(const, args.first) unless DORB.const_defined? const
-    end
+#    def method_missing(meth, *args, &blk)
+#      const = meth.to_s.upcase
+#      DORB.const_set(const, args.first) unless DORB.const_defined? const
+#    end
 
     extend self
   end
