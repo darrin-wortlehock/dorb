@@ -58,8 +58,8 @@ module DORB
     
     def extended_attributes
       @extended_attributes ||= begin
-        response = RestClient.get "#{url}/#{id}", :params => credentials
-        raise APIError.new("Failed to get #{url}/#{id}. Response code was #{response.code}") unless response.code == 200
+        response = RestClient.get "#{url}", :params => credentials
+        raise APIError.new("Failed to get #{url}. Response code was #{response.code}") unless response.code == 200
         parsed_response = ::JSON.parse(response.to_str)
         raise APIError.new("Failed to get #{url}. Parsed response status was #{parsed_response['status']}") unless parsed_response['status'] == 'OK'
         parsed_response['size'].symbolize_keys
@@ -69,9 +69,17 @@ module DORB
     def self.url
       "#{DORB::API_ENDPOINT}/sizes"
     end
+    
+    def url
+      "#{DORB::API_ENDPOINT}/sizes/#{id}"
+    end
 
     def self.credentials
       {:client_id => DORB::Config.client_id, :api_key => DORB::Config.api_key}
+    end
+
+    def credentials
+      self.class.credentials
     end
 
   end
