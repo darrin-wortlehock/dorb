@@ -52,6 +52,10 @@ This method returns a droplet for a specific droplet id.
 
     DORB::Droplet.find id
 
+    DORB::Droplet.find_by_ip ip_address
+
+    DORB::Droplet.find_all_by_name name
+    
 #####  New droplet
 This method allows you to create a new droplet.
 
@@ -127,7 +131,7 @@ This method destroys one of your droplets - this is irreversible.
 ##### All Regions
 This method will return all the available regions within the Digital Ocean cloud.
 
-    DORB::Regions.all
+    DORB::Region.all
 
 ### Images
 
@@ -139,7 +143,9 @@ This method returns all the available images that can be accessed by your client
 ##### Find image
 This method returns an image instance
 
-    DORB::Image.find name
+    DORB::Image.find id
+    
+    DORB::Image.find_all_by_name name
 
 ##### Destroy image
 This method allows you to destroy an image. There is no way to restore a deleted image so be careful and ensure your data is properly backed up.
@@ -156,7 +162,9 @@ This method lists all the available public SSH keys in your account that can be 
 ##### Find SSH key
 This method returns an SSHKey instance
 
-    DORB::SSHKey.find name
+    DORB::SSHKey.find id
+    
+    DORB::SSHKey.find_all_by_name name
 
 ##### Add SSH key
 This method allows you to add a new public SSH key to your account.
