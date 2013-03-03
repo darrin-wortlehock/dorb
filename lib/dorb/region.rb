@@ -5,22 +5,6 @@ module DORB
   class Region
 
     attr_accessor :id, :name
-    
-    def self.all
-      @regions ||= begin
-        response = RestClient.get url, :params => credentials
-        raise "BANG" unless response.code == 200
-        parsed_response = ::JSON.parse(response.to_str)
-        raise "BANG BANG" unless parsed_response['status'] == 'OK'
-        regions_attributes = parsed_response['regions']
-        regions = {}
-        regions_attributes.each do |region_attributes|
-          region = Region.new(region_attributes.symbolize_keys)
-          regions[region.to_sym] = region
-        end
-        regions
-      end
-    end
 
     def initialize( opts={} )
       options = opts.symbolize_keys
@@ -32,6 +16,22 @@ module DORB
 
     def to_sym
       name.gsub(/\s/, '_').downcase.to_sym
+    end
+
+    def self.all
+      @regions ||= begin
+        response = RestClient.get url, :params => credentials
+        raise APIError.new("Failed to get #{url}. Response code was #{response.code}") unless response.code == 200
+        parsed_response = ::JSON.parse(response.to_str)
+        raise APIError.new("Failed to get #{url}. Parsed response status was #{parsed_response['status']}") unless parsed_response['status'] == 'OK'
+        regions_attributes = parsed_response['regions']
+        regions = {}
+        regions_attributes.each do |region_attributes|
+          region = Region.new(region_attributes.symbolize_keys)
+          regions[region.to_sym] = region
+        end
+        regions
+      end
     end
     
     private
