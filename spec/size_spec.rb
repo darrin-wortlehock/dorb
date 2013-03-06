@@ -24,11 +24,8 @@ describe DORB::Size do
       VCR.use_cassette 'sizes/all' do
         sizes = DORB::Size.all
         sizes.should_not be_empty
-        sizes.should respond_to(:keys)
-        sizes.keys.all? { |key| key.should be_an_instance_of(Symbol) }
-        sizes.should respond_to(:values)
-        sizes.values.all? { |value| value.should be_an_instance_of(DORB::Size) }
         sizes.should respond_to(:each)
+        sizes.all? { |size| size.should be_an_instance_of(DORB::Size) }
       end
     end
   end

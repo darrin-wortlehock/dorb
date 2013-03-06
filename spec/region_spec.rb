@@ -14,11 +14,8 @@ describe DORB::Region do
       VCR.use_cassette 'regions/all' do
         regions = DORB::Region.all
         regions.should_not be_empty 
-        regions.should respond_to(:keys)
-        regions.keys.all? { |key| key.should be_an_instance_of(Symbol) }
-        regions.should respond_to(:values)
-        regions.values.all? { |value| value.should be_an_instance_of(DORB::Region) }
         regions.should respond_to(:each)
+        regions.all? { |region| region.should be_an_instance_of(DORB::Region) }
       end
     end
   end

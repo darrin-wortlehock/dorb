@@ -3,7 +3,7 @@ module DORB
 
     include Resource
 
-    self.resource_name = 'region'
+    self.resource_name = 'regions'
 
   end
 end

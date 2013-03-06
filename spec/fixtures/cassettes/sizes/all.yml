@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 03 Mar 2013 03:03:41 GMT
+      - Wed, 06 Mar 2013 17:28:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,17 +41,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQ4OWRhMWU1NWNjY2I5MDNkYWY0ZDE2YTA2N2I2ZTQ5BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn1odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9zaXplcz9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--7f25bfa87eaba5abd44462c05861d1d11ae7784b;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWVlM2EyZTQ5YTM0NTA5MDBlZWI2ODM5NzVkYjBkOGJjBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn1odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9zaXplcz9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--fb3f295a65605d04638856370421cefe6c135e29;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 7ec88c2f942494ebaa3901a9e1e75cab
+      - 2ebd43b4f3c41d7a1c7d50c57ec27efc
       X-Runtime:
-      - '0.780748'
+      - '0.173993'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","sizes":[{"id":66,"name":"512MB"},{"id":63,"name":"1GB"},{"id":62,"name":"2GB"},{"id":64,"name":"4GB"},{"id":65,"name":"8GB"},{"id":61,"name":"16GB"},{"id":60,"name":"32GB"},{"id":70,"name":"48GB"},{"id":69,"name":"64GB"},{"id":68,"name":"96GB"}]}'
     http_version: 
-  recorded_at: Sun, 03 Mar 2013 03:03:41 GMT
+  recorded_at: Wed, 06 Mar 2013 17:28:13 GMT
 recorded_with: VCR 2.4.0

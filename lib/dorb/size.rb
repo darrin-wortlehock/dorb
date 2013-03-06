@@ -3,7 +3,7 @@ module DORB
 
     include Resource
 
-    self.resource_name = 'size'
+    self.resource_name = 'sizes'
     
     define_attribute :memory
     define_attribute :disk

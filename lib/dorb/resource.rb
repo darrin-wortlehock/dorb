@@ -5,21 +5,15 @@ module DORB
   module Resource
 
     def self.included klass
-      class << klass
-        class << self
-          attr_accessor :resource_name
-          attr_accessor :attribute_names
-          attr_accessor :extended_attributes
-          alias :extended_attributes? :extended_attributes
-        end
-        attr_accessor :id, :name
-        self.resource_name = "UNDEFINED"
-        puts self.resource_name
-      end
       klass.extend ClassMethods
     end
 
     module ClassMethods
+
+      attr_accessor :resource_name
+      attr_accessor :attribute_names
+      attr_accessor :extended_attributes
+      alias :extended_attributes? :extended_attributes
 
       def define_attribute names
         [names].flatten.each do |name|
@@ -66,23 +60,28 @@ module DORB
         raise NotImplementedError
       end
 
-      def call_api(action=nil)
+      def call_api(action=nil, extra_params={})
         url = url_for_action(action)
-        response = RestClient.get url, :params => options.merge(credentials)
-        unless response.code == 200
-          raise APIError.new("Failed to get #{url}. Response code was #{response.code}")
+        params = extra_params.merge(credentials)
+        response = RestClient.get url, :params => params do |response, request, result, &block|
+          raise APIError.new(api_call_error_message(request,response)) unless response.code < 400
+          response.return!(request, result, &block)
         end
         parse_api_response(response)
       end
 
-      def url_for_action(action)
+      def api_call_error_message(request, response)
+        "API Call to #{request.method} #{request.url} failed. Response was #{response.description}"
+      end
+
+      def url_for_action(action=nil)
         uri = URI.parse(DORB::API_ENDPOINT)
         path = uri.path.split('/')
         path.concat(self.resource_name.split('/'))
-        path.concat(action.split('/'))
+        path.concat(action.split('/')) unless action.nil?
         path.reject!(&:empty?)
         path.compact!
-        uri.path = path.join('/')
+        uri.path = path.unshift('').join('/')
         puts uri.to_s
         uri.to_s
       end
@@ -101,6 +100,7 @@ module DORB
 
     end
     
+    attr_accessor :id, :name
 
     def initialize( attributes={} )
       required, optional = split_required_attributes(attributes, [:id, :name])
