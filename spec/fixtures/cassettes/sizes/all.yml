@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 17:28:13 GMT
+      - Wed, 06 Mar 2013 22:43:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,17 +41,557 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWVlM2EyZTQ5YTM0NTA5MDBlZWI2ODM5NzVkYjBkOGJjBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn1odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9zaXplcz9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--fb3f295a65605d04638856370421cefe6c135e29;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTdhNTllOTY5NWIzYzE5M2EyNzdkZWViNDAzZThkMmRmBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn1odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9zaXplcz9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--09eb5cd21addcf3adb0e8a83ec5016225dece65e;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 2ebd43b4f3c41d7a1c7d50c57ec27efc
+      - b45983a6e3845e198aaec9d9a1d1b972
       X-Runtime:
-      - '0.173993'
+      - '0.817126'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","sizes":[{"id":66,"name":"512MB"},{"id":63,"name":"1GB"},{"id":62,"name":"2GB"},{"id":64,"name":"4GB"},{"id":65,"name":"8GB"},{"id":61,"name":"16GB"},{"id":60,"name":"32GB"},{"id":70,"name":"48GB"},{"id":69,"name":"64GB"},{"id":68,"name":"96GB"}]}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 17:28:13 GMT
+  recorded_at: Wed, 06 Mar 2013 22:43:40 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/66?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"a63e1150108dfe045db0f43b6c3bbaa8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTA2YmZkM2Y4OTI0YjZlMDMzOTdlMTg1ZWYwM2ZkZmJmBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjY%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--a6efb1ed9d1a8be92a92ef80b9db6e87b802971b;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 3709e83ce4421b877f9d66991e3a3edf
+      X-Runtime:
+      - '0.145449'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":0.00744,"cpu":1,"disk":20,"id":66,"memory":512,"name":"512MB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:41 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/63?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"7f996900a48526a8dcfe84a792ddc1fe"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTI3MmNmNWJiZWVmMDliM2RjY2Y3YTI2M2Y1ODc1ZjVjBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--faf1ddedfba57e2ffc4380c8ee98f9ee58bd12fa;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - ef6ad857e0ba1d373e934c05ed4703df
+      X-Runtime:
+      - '0.185553'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":0.01488,"cpu":1,"disk":30,"id":63,"memory":1024,"name":"1GB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:41 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/62?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"d9ac89545e8817aae28a55bedb33079f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTU4OGJhODkyZWI4ODJjYzMwM2NiNGYwZGYwMDYxMmZmBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjI%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--f376fcfdb0be2dd794ab5f43431fb14740b89788;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - decb6c5bdcc1bbb13edeec2f86b590ad
+      X-Runtime:
+      - '0.143029'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":0.02976,"cpu":2,"disk":40,"id":62,"memory":2048,"name":"2GB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:42 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/64?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"6d50dad2ebf484e8d1358b0dc46d079a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWIxNTk5NDYyZWMzMmJhODE4MGVhMTI3MzBmMzA3NWMzBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjQ%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--719ad5746aae74063c444dbe8b44dca724e1d03b;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - b389450351cac96c7f4f2db400ffe6c2
+      X-Runtime:
+      - '0.210898'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":0.05952,"cpu":2,"disk":60,"id":64,"memory":4096,"name":"4GB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:43 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/65?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"8c12ce828f01ca136707d9ba79af8f10"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQ1Yjg2NGVhM2NjYTc2MzBmNGY5NmI5NzJiMjM5NWVmBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjU%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--5039c830ff880d32edc231b87d9fc55e48e385ea;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 8b99fd6e822cb406f940f3c6b4a656fa
+      X-Runtime:
+      - '0.146612'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":0.11905,"cpu":4,"disk":80,"id":65,"memory":8192,"name":"8GB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:43 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/61?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"0a9be170ed9d35115b4871e7f936bbd9"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWE5NjdkZDc2YzA3NjRhNmZiMjJiNWM5OGUzYzg0ZDcxBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjE%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--18e727184b39673c232f03145d615ccbedd32b43;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 65a28876e10a1303f5fb1d2a7f70026e
+      X-Runtime:
+      - '0.154358'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":0.2381,"cpu":8,"disk":160,"id":61,"memory":16384,"name":"16GB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:44 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/60?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"a57c88b502fbe6d0b0ff6982a85cf0fc"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTg5NjY4MjQ2NTlmM2FjNTA1MGIwZmI1ODliNjZjZWIyBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjA%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--ca978bb7c78a162f908c8135f93c594d46ce7ac8;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - e27bcb057fe44215673d2c03bda2d0c3
+      X-Runtime:
+      - '0.149205'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":0.47619,"cpu":12,"disk":320,"id":60,"memory":32768,"name":"32GB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:45 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/70?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"5ee01f38aa85b9ae23518b00314668bb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTBmYmIwYzM5NTc4YjcxMjFjNTZiN2QxZTcwMzBmMmRiBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNzA%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--a556831918bd0867c8a117c85420754d2954410a;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 845acdbf3e1767cabf60a60838ed488a
+      X-Runtime:
+      - '0.143767'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":0.71429,"cpu":16,"disk":480,"id":70,"memory":49152,"name":"48GB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:45 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/69?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"5733d0aaff79733edb1b45c46b01530a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWMzYWRhMWU4YzExMWVmNWIxNmZiZjUxODQ3ZTVlZTY1BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjk%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--042635069b535a0e8616152eda7c1ef7f57f3c1b;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - c0b8b818dd0b8e4b216aa4c984c307cc
+      X-Runtime:
+      - '0.172527'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":0.95238,"cpu":20,"disk":640,"id":69,"memory":65536,"name":"64GB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:46 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/sizes/68?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Mar 2013 22:43:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"66f71ff04ffc61fa6d10fbe4b610e985"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTZkNDFiNTYyN2NiZjQwM2U2OTgyNDUxOWU0ZTM2NWQ1BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjg%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--e77332689c9481b9fbd2f1e1a2c61274770677e0;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - a057bb9c8740ede1a9e2d82c736673f7
+      X-Runtime:
+      - '0.150796'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","size":{"cost_per_hour":1.42857,"cpu":24,"disk":960,"id":68,"memory":94208,"name":"96GB"}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 22:43:47 GMT
 recorded_with: VCR 2.4.0

@@ -20,7 +20,7 @@ describe DORB::Size do
     before(:each) do
       DORB::Config.setup :client_id => ENV['DIGITAL_OCEAN_CLIENT_ID'], :api_key => ENV['DIGITAL_OCEAN_API_KEY']
     end
-    it "should return a map of all the available sizes" do
+    it "should return an array of all the available sizes" do
       VCR.use_cassette 'sizes/all' do
         sizes = DORB::Size.all
         sizes.should_not be_empty

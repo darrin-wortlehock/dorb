@@ -10,14 +10,15 @@ module DORB
 
     module ClassMethods
 
-      attr_accessor :resource_name
+      attr_accessor :collection_resource_name
+      attr_accessor :singular_resource_name
       attr_accessor :attribute_names
       attr_accessor :extended_attributes
       alias :extended_attributes? :extended_attributes
 
       def define_attribute names
         [names].flatten.each do |name|
-          #self.attribute_names = [self.attribute_names].flatten.compact << name
+          self.attribute_names = [self.attribute_names].flatten.compact << name
           attr_accessor(name)
         end
       end
@@ -45,7 +46,7 @@ module DORB
       end
 
       def show(id, options={})
-        call_api(self.id)
+        call_api(id)
       end
 
       def create(params={})
@@ -76,7 +77,7 @@ module DORB
 
       def url_for_action(action=nil)
         uri = URI.parse(DORB::API_ENDPOINT)
-        uri.path << "/#{self.resource_name}"
+        uri.path << "/#{self.collection_resource_name}"
         uri.path << "/#{action}" unless action.nil?
         uri.path.gsub!(/\/\/+/, '/')
         uri.to_s
@@ -91,7 +92,7 @@ module DORB
         unless parsed_response['status'] == 'OK'
           raise APIError.new("API call failed. Parsed response status was #{parsed_response['status']}") 
         end
-        parsed_response[self.resource_name]
+        parsed_response[self.collection_resource_name] || parsed_response[self.singular_resource_name]
       end
 
     end
