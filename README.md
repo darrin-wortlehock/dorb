@@ -5,7 +5,7 @@
 
 Interact with the [Digital Ocean](http://www.digitalocean.com) [API](http://www.digitalocean.com/api) in an idiomatic ruby way.
 
-DORB exposes the Digital Ocean API as Ruby objects, has 100% test coverage and supports the entire API.
+DORB exposes the Digital Ocean API as Ruby objects, has a comprehensive test suite and supports the entire API.
 
 ## Installation
 
