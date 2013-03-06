@@ -15,7 +15,6 @@ describe DORB::Size do
   it { should respond_to(:disk) }
   it { should respond_to(:cpu) }
   it { should respond_to(:cost_per_hour) }
-  it { should respond_to(:to_sym) }
 
   describe '.all' do
     before(:each) do

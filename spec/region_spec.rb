@@ -5,7 +5,6 @@ describe DORB::Region do
   subject { DORB::Region.new(:id => 1, :name => 'name') }
   it { should respond_to(:name) }
   it { should respond_to(:id) }
-  it { should respond_to(:to_sym) }
 
   describe '.all' do
     before(:each) do
