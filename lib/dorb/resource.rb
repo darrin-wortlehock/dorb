@@ -76,13 +76,9 @@ module DORB
 
       def url_for_action(action=nil)
         uri = URI.parse(DORB::API_ENDPOINT)
-        path = uri.path.split('/')
-        path.concat(self.resource_name.split('/'))
-        path.concat(action.split('/')) unless action.nil?
-        path.reject!(&:empty?)
-        path.compact!
-        uri.path = path.unshift('').join('/')
-        puts uri.to_s
+        uri.path << "/#{self.resource_name}"
+        uri.path << "/#{action}" unless action.nil?
+        uri.path.gsub!(/\/\/+/, '/')
         uri.to_s
       end
       
