@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.digitalocean.com/images?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 12 Mar 2013 09:49:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"7589fcbe5a1fcb30d879fc6706a468d6"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTRjYWMxODEwMTk0NTY0M2E0MzYzOGZlMWNiM2UyYjAyBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn5odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9pbWFnZXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--8c0f28626a53b5ac91449441a89577692fa7394e;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 0e2ccca33fe7336de3ec5f1595430cda
+      X-Runtime:
+      - '1.362350'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","images":[{"id":109578,"name":"test","distribution":"Ubuntu"},{"id":1601,"name":"CentOS
+        5.8 x64","distribution":"CentOS"},{"id":1602,"name":"CentOS 5.8 x32","distribution":"CentOS"},{"id":1605,"name":"CentOS
+        6.0 x32","distribution":"CentOS"},{"id":1606,"name":"Fedora 15 x64","distribution":"Fedora"},{"id":1609,"name":"Ubuntu
+        11.10 x32 Server","distribution":"Ubuntu"},{"id":1611,"name":"CentOS 6.2 x64","distribution":"CentOS"},{"id":1615,"name":"Fedora
+        16 x64 Server","distribution":"Fedora"},{"id":1618,"name":"Fedora 16 x64 Desktop","distribution":"Fedora"},{"id":2676,"name":"Ubuntu
+        12.04 x64 Server","distribution":"Ubuntu"},{"id":12573,"name":"Debian 6.0
+        x64","distribution":"Debian"},{"id":12574,"name":"CentOS 6.3 x64","distribution":"CentOS"},{"id":12575,"name":"Debian
+        6.0 x32","distribution":"Debian"},{"id":12578,"name":"CentOS 6.3 x32","distribution":"CentOS"},{"id":14097,"name":"Ubuntu
+        10.04 x64 Server","distribution":"Ubuntu"},{"id":14098,"name":"Ubuntu 10.04
+        x32 Server","distribution":"Ubuntu"},{"id":14218,"name":"Ubuntu 12.04 x64
+        Desktop","distribution":"Ubuntu"},{"id":25306,"name":"Ubuntu 12.10 x32 Server","distribution":"Ubuntu"},{"id":25485,"name":"Ubuntu
+        12.10 x32 Desktop","distribution":"Ubuntu"},{"id":25489,"name":"Ubuntu 12.10
+        x64 Server","distribution":"Ubuntu"},{"id":25493,"name":"Ubuntu 12.10 x64
+        Desktop","distribution":"Ubuntu"},{"id":32387,"name":"Fedora 17 x32 Server","distribution":"Fedora"},{"id":32399,"name":"Fedora
+        17 x32 Desktop","distribution":"Fedora"},{"id":32419,"name":"Fedora 17 x64
+        Desktop","distribution":"Fedora"},{"id":32428,"name":"Fedora 17 x64 Server","distribution":"Fedora"},{"id":42735,"name":"Ubuntu
+        12.04 x32 Server","distribution":"Ubuntu"},{"id":43458,"name":"Ubuntu 11.04x64
+        Server","distribution":"Ubuntu"},{"id":43462,"name":"Ubuntu 11.04x32 Desktop","distribution":"Ubuntu"},{"id":46964,"name":"LAMP
+        on Ubuntu 12.04","distribution":"Ubuntu"}]}'
+    http_version: 
+  recorded_at: Tue, 12 Mar 2013 09:49:43 GMT
+recorded_with: VCR 2.4.0

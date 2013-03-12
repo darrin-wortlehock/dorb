@@ -6,6 +6,7 @@ require 'dorb/config'
 require 'dorb/resource'
 require 'dorb/region'
 require 'dorb/size'
+require 'dorb/image'
 
 module DORB
   API_ENDPOINT = 'https://api.digitalocean.com'
