@@ -8,6 +8,7 @@ require 'dorb/region'
 require 'dorb/size'
 require 'dorb/image'
 require 'dorb/ssh_key'
+require 'dorb/droplet'
 
 module DORB
   API_ENDPOINT = 'https://api.digitalocean.com'
