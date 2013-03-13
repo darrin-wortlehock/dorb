@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:40 GMT
+      - Wed, 13 Mar 2013 11:06:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,19 +41,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTdhNTllOTY5NWIzYzE5M2EyNzdkZWViNDAzZThkMmRmBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn1odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9zaXplcz9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--09eb5cd21addcf3adb0e8a83ec5016225dece65e;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWU3YjYxN2IyMzcxODRjMzdlZWJmOTU5YTMxMGZkYWZjBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn1odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9zaXplcz9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--8e2c723104c9a9f065f2cb1d52157b007eeef0c9;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - b45983a6e3845e198aaec9d9a1d1b972
+      - db2a56c3ee21dc29497c3e0e9bff0fe7
       X-Runtime:
-      - '0.817126'
+      - '0.166091'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","sizes":[{"id":66,"name":"512MB"},{"id":63,"name":"1GB"},{"id":62,"name":"2GB"},{"id":64,"name":"4GB"},{"id":65,"name":"8GB"},{"id":61,"name":"16GB"},{"id":60,"name":"32GB"},{"id":70,"name":"48GB"},{"id":69,"name":"64GB"},{"id":68,"name":"96GB"}]}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:40 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:44 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/66?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -75,7 +75,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:41 GMT
+      - Wed, 13 Mar 2013 11:06:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -95,19 +95,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTA2YmZkM2Y4OTI0YjZlMDMzOTdlMTg1ZWYwM2ZkZmJmBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjY%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--a6efb1ed9d1a8be92a92ef80b9db6e87b802971b;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTc1YzMyYzg4OGZkNTg1YjA2ZjMzZTdmNWZkZTc1ZWVmBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjY%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--4b30868a2cd28020c06664736c9162e38f4f076c;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 3709e83ce4421b877f9d66991e3a3edf
+      - 2d3ed7f650cfe0087b42f01bebf97fa8
       X-Runtime:
-      - '0.145449'
+      - '0.155516'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":0.00744,"cpu":1,"disk":20,"id":66,"memory":512,"name":"512MB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:41 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:44 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/63?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -129,7 +129,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:41 GMT
+      - Wed, 13 Mar 2013 11:06:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -149,19 +149,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTI3MmNmNWJiZWVmMDliM2RjY2Y3YTI2M2Y1ODc1ZjVjBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--faf1ddedfba57e2ffc4380c8ee98f9ee58bd12fa;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWZmZTQ4NDE1NzhiOGM3YTkzY2RlOWNlYTQ1ZGVhZTc5BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--1637e98a8be44799f2fc9e9d6db9837b1a7e291d;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - ef6ad857e0ba1d373e934c05ed4703df
+      - c3128a2df9bdba5ce19bd5c88c89bfd0
       X-Runtime:
-      - '0.185553'
+      - '0.168068'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":0.01488,"cpu":1,"disk":30,"id":63,"memory":1024,"name":"1GB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:41 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:45 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/62?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -183,7 +183,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:42 GMT
+      - Wed, 13 Mar 2013 11:06:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -203,19 +203,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTU4OGJhODkyZWI4ODJjYzMwM2NiNGYwZGYwMDYxMmZmBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjI%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--f376fcfdb0be2dd794ab5f43431fb14740b89788;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWYwOWQ0YjRlY2M3M2JhNDU0MGZlODI0OGFiODY1MWJkBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjI%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--d0d48966539ab3afec66362b38deca2ba172233b;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - decb6c5bdcc1bbb13edeec2f86b590ad
+      - 3937e5ee627537b91deda4e39496a2d8
       X-Runtime:
-      - '0.143029'
+      - '0.473517'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":0.02976,"cpu":2,"disk":40,"id":62,"memory":2048,"name":"2GB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:42 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:46 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/64?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -237,7 +237,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:43 GMT
+      - Wed, 13 Mar 2013 11:06:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -257,19 +257,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWIxNTk5NDYyZWMzMmJhODE4MGVhMTI3MzBmMzA3NWMzBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjQ%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--719ad5746aae74063c444dbe8b44dca724e1d03b;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTIwMDllODQ4OWIzNjEzNGY1NjQyMTYwZjRmZTUzNzI0BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjQ%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--0914d84661e10d3c2c881ee6787ea00f97162170;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - b389450351cac96c7f4f2db400ffe6c2
+      - 3603c9efc81a54d3a06d8d97958c51b9
       X-Runtime:
-      - '0.210898'
+      - '0.145111'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":0.05952,"cpu":2,"disk":60,"id":64,"memory":4096,"name":"4GB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:43 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:47 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/65?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -291,7 +291,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:43 GMT
+      - Wed, 13 Mar 2013 11:06:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -311,19 +311,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQ1Yjg2NGVhM2NjYTc2MzBmNGY5NmI5NzJiMjM5NWVmBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjU%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--5039c830ff880d32edc231b87d9fc55e48e385ea;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTNmODIxNDQxMjZkYjc0MmU0NjI0MDVjYjhkOGE5NjNkBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjU%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--2586455384e04562b66528c44b7bce0524427a89;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 8b99fd6e822cb406f940f3c6b4a656fa
+      - 9e3086ba40060c88c2fec0898b3c3560
       X-Runtime:
-      - '0.146612'
+      - '0.174643'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":0.11905,"cpu":4,"disk":80,"id":65,"memory":8192,"name":"8GB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:43 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:47 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/61?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -345,7 +345,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:44 GMT
+      - Wed, 13 Mar 2013 11:06:50 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -365,19 +365,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWE5NjdkZDc2YzA3NjRhNmZiMjJiNWM5OGUzYzg0ZDcxBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjE%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--18e727184b39673c232f03145d615ccbedd32b43;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTg5MmE4ZmQ1NWZmMmQ2Y2EwODZkZGMxMjU0NjBkNTc3BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjE%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--5b30c9d59b595aeb7f073aebb014eaa7b53511cc;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 65a28876e10a1303f5fb1d2a7f70026e
+      - f37e63f0d18c5778f7f90a4ae28ec03e
       X-Runtime:
-      - '0.154358'
+      - '0.293620'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":0.2381,"cpu":8,"disk":160,"id":61,"memory":16384,"name":"16GB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:44 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:48 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/60?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -399,7 +399,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:45 GMT
+      - Wed, 13 Mar 2013 11:06:51 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -419,19 +419,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTg5NjY4MjQ2NTlmM2FjNTA1MGIwZmI1ODliNjZjZWIyBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjA%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--ca978bb7c78a162f908c8135f93c594d46ce7ac8;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTNkNWM0MDIyNjY1NTRlMmU5Y2NhMjRjNGI0NDIyZmQ0BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjA%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--d0d91020cb9c99d719746081fcf6d7b6d24e9940;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - e27bcb057fe44215673d2c03bda2d0c3
+      - 1da6549e712b9d90b45439e918b7b969
       X-Runtime:
-      - '0.149205'
+      - '0.282991'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":0.47619,"cpu":12,"disk":320,"id":60,"memory":32768,"name":"32GB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:45 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:49 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/70?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -453,7 +453,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:45 GMT
+      - Wed, 13 Mar 2013 11:06:52 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -473,19 +473,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTBmYmIwYzM5NTc4YjcxMjFjNTZiN2QxZTcwMzBmMmRiBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNzA%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--a556831918bd0867c8a117c85420754d2954410a;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWRkNDk1YjYwZjZhYmM5M2MzMzc0MDMyOWExNDBjNTg2BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNzA%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--b1689e08dc42d62047f7cd44afa747d70b88774b;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 845acdbf3e1767cabf60a60838ed488a
+      - c09e4c4ba4dd000059804014c8bd9eb9
       X-Runtime:
-      - '0.143767'
+      - '0.163873'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":0.71429,"cpu":16,"disk":480,"id":70,"memory":49152,"name":"48GB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:45 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:50 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/69?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -507,7 +507,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:46 GMT
+      - Wed, 13 Mar 2013 11:06:52 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -527,19 +527,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWMzYWRhMWU4YzExMWVmNWIxNmZiZjUxODQ3ZTVlZTY1BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjk%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--042635069b535a0e8616152eda7c1ef7f57f3c1b;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWM5MGJhMzNiMTA0MTIwZWEwM2NjNDRhYzg4YTBmNGZjBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjk%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--59e773f69de165a0171b6df32d25f4125a4d6a0d;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - c0b8b818dd0b8e4b216aa4c984c307cc
+      - 93bed34a5fa4ef430ddb17cc7be9236e
       X-Runtime:
-      - '0.172527'
+      - '0.154903'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":0.95238,"cpu":20,"disk":640,"id":69,"memory":65536,"name":"64GB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:46 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:50 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/sizes/68?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -561,7 +561,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Mar 2013 22:43:47 GMT
+      - Wed, 13 Mar 2013 11:06:53 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -581,17 +581,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTZkNDFiNTYyN2NiZjQwM2U2OTgyNDUxOWU0ZTM2NWQ1BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjg%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--e77332689c9481b9fbd2f1e1a2c61274770677e0;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTUxNDY4ZGU0YTg0ODk2NDg0NmU5OTg3YjRhOWI1MzEwBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc2l6ZXMvNjg%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--144079e499c27a0695b98f84492091cdaaf1022b;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - a057bb9c8740ede1a9e2d82c736673f7
+      - 7564fad3f4676b81210c0070c84e5bc5
       X-Runtime:
-      - '0.150796'
+      - '0.141231'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","size":{"cost_per_hour":1.42857,"cpu":24,"disk":960,"id":68,"memory":94208,"name":"96GB"}}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 22:43:47 GMT
+  recorded_at: Wed, 13 Mar 2013 11:06:51 GMT
 recorded_with: VCR 2.4.0
