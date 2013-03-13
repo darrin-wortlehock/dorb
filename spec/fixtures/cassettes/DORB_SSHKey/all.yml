@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 12 Mar 2013 09:57:44 GMT
+      - Wed, 13 Mar 2013 12:15:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,17 +41,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTU1ZjdlYmViZGUxZWE1Njg0ZmI2ODkyYjQ2MjE5YzFlBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--e85e60d12d2991e0c2ced7c6775ee7f025e5552c;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJThlOWY0NWVjN2NjZWUzZDc4ZjgwOWY2NmQ0NTMxNTNlBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--d386df5f4058a0a779ed8a7347efec60c66f17a3;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 38273718fb7f4cb6d23793ad20b179ee
+      - e4273f7b5db6c706615ecba8a8798c2c
       X-Runtime:
-      - '1.384857'
+      - '0.171559'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
       string: ! '{"status":"OK","ssh_keys":[{"id":6484,"name":"darrin@exempla.co.uk"}]}'
     http_version: 
-  recorded_at: Tue, 12 Mar 2013 09:57:44 GMT
+  recorded_at: Wed, 13 Mar 2013 12:15:46 GMT
 recorded_with: VCR 2.4.0

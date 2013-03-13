@@ -90,7 +90,11 @@ module DORB
       def parse_api_response(response)
         parsed_response = JSON.parse(response.to_str)
         unless parsed_response['status'] == 'OK'
-          raise APIError.new("API call failed. Parsed response status was #{parsed_response['status']}") 
+          message = "API call failed."
+          parsed_response.each do |key, value|
+            message << " #{key.gsub('_',' ').capitalize} was '#{value}'."
+          end
+          raise APIError.new(message) 
         end
         parsed_response[self.collection_resource_name] || parsed_response[self.singular_resource_name]
       end

@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.digitalocean.com/droplets?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 13 Mar 2013 12:15:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"42607d580051ac13fc81210345429e43"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTYyYjdkNTkxYjBmM2FjNjcwZDhiMmI4YTkyMGI4ZGYzBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvZHJvcGxldHM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--ba67eecd2aa5c5440e74c0cd3845740a058de10d;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - a5296c1b4f34fdf6dd129d345a58216a
+      X-Runtime:
+      - '0.157784'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","droplets":[{"id":109910,"name":"parentplace.co.uk","image_id":25489,"size_id":66,"region_id":2,"backups_active":null,"ip_address":"198.211.124.212","status":"active"}]}'
+    http_version: 
+  recorded_at: Wed, 13 Mar 2013 12:15:50 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/droplets/109910?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 13 Mar 2013 12:15:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"156a047867d690952d3698c1101b742b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTVjYTZhMjM3Nzg2OTBiZmY3NDFlY2I1YTA4ODhmOWYyBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgGCaHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvZHJvcGxldHMvMTA5OTEwP2NsaWVudF9pZD04NFU5cUh3ZTJONzNkRW9QRlZxS3omYXBpX2tleT1xUThtcFJpRVlnM3VPNk9yTFRUZUpEMUR2UEdFUWhWbU1lSHZEcjNkbQY7AEY%3D--e59fc857b8108b5618858bf62aaec8c24f32b437;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - 0013e5ee8d75d287e0d9a1319f67954d
+      X-Runtime:
+      - '0.164101'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","droplet":{"id":109910,"name":"parentplace.co.uk","image_id":25489,"size_id":66,"region_id":2,"backups_active":null,"ip_address":"198.211.124.212","status":"active"}}'
+    http_version: 
+  recorded_at: Wed, 13 Mar 2013 12:15:51 GMT
+recorded_with: VCR 2.4.0

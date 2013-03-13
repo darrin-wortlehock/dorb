@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.digitalocean.com/regions?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    uri: https://api.digitalocean.com/sizes/0?api_key=<API_KEY>&client_id=<CLIENT_ID>
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:15:54 GMT
+      - Wed, 13 Mar 2013 12:16:16 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,22 +37,21 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"6f472d2a870e01c5f53d1892d1d463d8"'
+      - ! '"a8692ea51a7ca8869222d295a1229ca7"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFjY2Y4ODdkZGM0Mzk2MmU0N2U1NDcyMGUzNGM4MGIxBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn9odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9yZWdpb25zP2NsaWVudF9pZD04NFU5cUh3ZTJONzNkRW9QRlZxS3omYXBpX2tleT1xUThtcFJpRVlnM3VPNk9yTFRUZUpEMUR2UEdFUWhWbU1lSHZEcjNkbQY7AEY%3D--9afb44f7c89d51810dc6ea170112b8619c153b60;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTc5ZDlhZjU0NjYxODZmYmQ1NDk0OGEzNzdmZDc1MWU0BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn9odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9zaXplcy8wP2NsaWVudF9pZD04NFU5cUh3ZTJONzNkRW9QRlZxS3omYXBpX2tleT1xUThtcFJpRVlnM3VPNk9yTFRUZUpEMUR2UEdFUWhWbU1lSHZEcjNkbQY7AEY%3D--0627d14249d81e3136b1641bb91f36211b0f433c;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 2244ec24c8e5ba77cb2ee3ff3b9e65c2
+      - 93f140a217cdf0ee3359d98eab13f546
       X-Runtime:
-      - '0.163347'
+      - '0.298990'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
-      string: ! '{"status":"OK","regions":[{"id":1,"name":"New York 1"},{"id":2,"name":"Amsterdam
-        1"}]}'
+      string: ! '{"status":"ERROR","error_message":"No Size Found"}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:15:52 GMT
+  recorded_at: Wed, 13 Mar 2013 12:16:15 GMT
 recorded_with: VCR 2.4.0

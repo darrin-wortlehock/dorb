@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.digitalocean.com/regions?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    uri: https://api.digitalocean.com/droplets/0?api_key=<API_KEY>&client_id=<CLIENT_ID>
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:15:54 GMT
+      - Wed, 13 Mar 2013 12:15:53 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,22 +37,21 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"6f472d2a870e01c5f53d1892d1d463d8"'
+      - ! '"966766364c5bfaed449523bcb537629a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFjY2Y4ODdkZGM0Mzk2MmU0N2U1NDcyMGUzNGM4MGIxBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn9odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9yZWdpb25zP2NsaWVudF9pZD04NFU5cUh3ZTJONzNkRW9QRlZxS3omYXBpX2tleT1xUThtcFJpRVlnM3VPNk9yTFRUZUpEMUR2UEdFUWhWbU1lSHZEcjNkbQY7AEY%3D--9afb44f7c89d51810dc6ea170112b8619c153b60;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTA1Yjg1MGZhMzBiMGYwMGM1MGEyY2Q3NjU4NDk2N2Q2BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF9aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvZHJvcGxldHMvMD9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--5f3630933867b4844657f2356e4cf50de2772baf;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 2244ec24c8e5ba77cb2ee3ff3b9e65c2
+      - 83ffc6e92a2622e47c38b830255f79f0
       X-Runtime:
-      - '0.163347'
+      - '0.268753'
       X-Rack-Cache:
       - miss
     body:
       encoding: US-ASCII
-      string: ! '{"status":"OK","regions":[{"id":1,"name":"New York 1"},{"id":2,"name":"Amsterdam
-        1"}]}'
+      string: ! '{"status":"ERROR","error_message":"No Droplets Found"}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:15:52 GMT
+  recorded_at: Wed, 13 Mar 2013 12:15:51 GMT
 recorded_with: VCR 2.4.0

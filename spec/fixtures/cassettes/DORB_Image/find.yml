@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:15:57 GMT
+      - Wed, 13 Mar 2013 12:15:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,12 +41,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk2MWNjMTA0MDUyYzA3MmRhNWY0NjgyMjY3NmY5NmE2BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn5odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9pbWFnZXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--0224f5b4e992394482c2fb2f0bde9d43fd2c53a7;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWYxM2QyM2RlYTZjNzI3MjljMDI5Y2Q4MWZiYTBhZTI4BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn5odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9pbWFnZXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--6fc1bcbd192d3fdb215901d4536baaa0b09363e1;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 98d4f9a2be31190ec0ef9f1c9819325f
+      - 5bfb6b4dd57fa8a1353f5dbe41fe92d0
       X-Runtime:
-      - '0.457259'
+      - '0.176977'
       X-Rack-Cache:
       - miss
     body:
@@ -71,5 +71,59 @@ http_interactions:
         Server","distribution":"Ubuntu"},{"id":43462,"name":"Ubuntu 11.04x32 Desktop","distribution":"Ubuntu"},{"id":46964,"name":"LAMP
         on Ubuntu 12.04","distribution":"Ubuntu"}]}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:15:55 GMT
+  recorded_at: Wed, 13 Mar 2013 12:15:56 GMT
+- request:
+    method: get
+    uri: https://api.digitalocean.com/images/109578?api_key=<API_KEY>&client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 13 Mar 2013 12:15:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"70be74c7adb4e0e4126e670d3465b5c9"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQ2NjYxZWMxODdmZmFmZWMxMGFmZThmMzNmZTFmZmUxBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgGAaHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvaW1hZ2VzLzEwOTU3OD9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--c577b5784af80471795d06ae73b63ab797c6716e;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - a237e83e9971261110a53293e02d1d6a
+      X-Runtime:
+      - '0.159824'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"OK","image":{"id":109578,"name":"test","distribution":"Ubuntu"}}'
+    http_version: 
+  recorded_at: Wed, 13 Mar 2013 12:15:57 GMT
 recorded_with: VCR 2.4.0
