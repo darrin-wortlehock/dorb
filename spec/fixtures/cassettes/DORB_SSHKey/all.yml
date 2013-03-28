@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - ! '*/*; q=0.5, application/xml'
+      - '*/*; q=0.5, application/xml'
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:15:48 GMT
+      - Thu, 28 Mar 2013 08:22:08 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,21 +37,21 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"4d6514594b37b691cc3205224865cf87"'
+      - '"4d6514594b37b691cc3205224865cf87"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJThlOWY0NWVjN2NjZWUzZDc4ZjgwOWY2NmQ0NTMxNTNlBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--d386df5f4058a0a779ed8a7347efec60c66f17a3;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFhNTU1YjM0MGJjYzkwYjY3NzMwNDYzZDQyYmEzMmI2BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--cb27b991147e5d55d502c45ec9190065d780cdb2;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - e4273f7b5db6c706615ecba8a8798c2c
+      - abf062a44346dd0edb0760dafe89d5c5
       X-Runtime:
-      - '0.171559'
+      - '0.224034'
       X-Rack-Cache:
       - miss
     body:
-      encoding: US-ASCII
-      string: ! '{"status":"OK","ssh_keys":[{"id":6484,"name":"darrin@exempla.co.uk"}]}'
+      encoding: UTF-8
+      string: '{"status":"OK","ssh_keys":[{"id":6484,"name":"darrin@exempla.co.uk"}]}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:15:46 GMT
+  recorded_at: Thu, 28 Mar 2013 08:22:08 GMT
 recorded_with: VCR 2.4.0

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - ! '*/*; q=0.5, application/xml'
+      - '*/*; q=0.5, application/xml'
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:15:56 GMT
+      - Thu, 28 Mar 2013 08:22:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,21 +37,21 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"62871641d7b237c367b60f415e364158"'
+      - '"62871641d7b237c367b60f415e364158"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTI3YzFhZGYxYzZiNTdmNzdiYjAxMWNlN2I0NTYzMDMzBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF8aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvcmVnaW9ucy8wP2NsaWVudF9pZD04NFU5cUh3ZTJONzNkRW9QRlZxS3omYXBpX2tleT1xUThtcFJpRVlnM3VPNk9yTFRUZUpEMUR2UEdFUWhWbU1lSHZEcjNkbQY7AEY%3D--4e79eb73ebfba22984453fba8a283cd7634f2368;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTgwYzQ5MzJmZmI4NTY2NWRhOWE1ZTAxMWY1NjhjYmRiBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF8aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvcmVnaW9ucy8wP2NsaWVudF9pZD04NFU5cUh3ZTJONzNkRW9QRlZxS3omYXBpX2tleT1xUThtcFJpRVlnM3VPNk9yTFRUZUpEMUR2UEdFUWhWbU1lSHZEcjNkbQY7AEY%3D--af7aa5d028bee14d7ca2016ef19133aef4bef215;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 0d4d3b582f1b97611707207e7e68fc04
+      - fedd96f311903e33b0395e81891c311b
       X-Runtime:
-      - '0.179041'
+      - '0.163267'
       X-Rack-Cache:
       - miss
     body:
-      encoding: US-ASCII
-      string: ! '{"status":"ERROR","error_message":"No Region Found"}'
+      encoding: UTF-8
+      string: '{"status":"ERROR","error_message":"No Region Found"}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:15:54 GMT
+  recorded_at: Thu, 28 Mar 2013 08:22:45 GMT
 recorded_with: VCR 2.4.0

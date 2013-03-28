@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - ! '*/*; q=0.5, application/xml'
+      - '*/*; q=0.5, application/xml'
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:16:16 GMT
+      - Thu, 28 Mar 2013 08:23:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,21 +37,21 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"a8692ea51a7ca8869222d295a1229ca7"'
+      - '"a8692ea51a7ca8869222d295a1229ca7"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTc5ZDlhZjU0NjYxODZmYmQ1NDk0OGEzNzdmZDc1MWU0BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn9odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9zaXplcy8wP2NsaWVudF9pZD04NFU5cUh3ZTJONzNkRW9QRlZxS3omYXBpX2tleT1xUThtcFJpRVlnM3VPNk9yTFRUZUpEMUR2UEdFUWhWbU1lSHZEcjNkbQY7AEY%3D--0627d14249d81e3136b1641bb91f36211b0f433c;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFlZjI1ODk3YzAxMTQwZTc0NTU1MTlmNThlYWExOWMzBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn9odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9zaXplcy8wP2NsaWVudF9pZD04NFU5cUh3ZTJONzNkRW9QRlZxS3omYXBpX2tleT1xUThtcFJpRVlnM3VPNk9yTFRUZUpEMUR2UEdFUWhWbU1lSHZEcjNkbQY7AEY%3D--641dd56409e7d2d12727592d50eb019c38f67c45;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 93f140a217cdf0ee3359d98eab13f546
+      - ca92756719c2d54cf1a9e0955d2d38b5
       X-Runtime:
-      - '0.298990'
+      - '0.215958'
       X-Rack-Cache:
       - miss
     body:
-      encoding: US-ASCII
-      string: ! '{"status":"ERROR","error_message":"No Size Found"}'
+      encoding: UTF-8
+      string: '{"status":"ERROR","error_message":"No Size Found"}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:16:15 GMT
+  recorded_at: Thu, 28 Mar 2013 08:23:44 GMT
 recorded_with: VCR 2.4.0

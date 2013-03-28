@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - ! '*/*; q=0.5, application/xml'
+      - '*/*; q=0.5, application/xml'
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:15:49 GMT
+      - Thu, 28 Mar 2013 08:22:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,23 +37,23 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"4d6514594b37b691cc3205224865cf87"'
+      - '"4d6514594b37b691cc3205224865cf87"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTUxYmU5NjIzYzkyMTVmNDI0ZGNmYTUyYjdjM2Y5NjRkBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--3792a7a3520a1c37b79cbce0a8718ddf16c8d154;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWE5MmNlOGI2YmFhOWEyYjM5MjhlNjI0NTk1ZmMwZDViBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF7aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--ef730d6a3ec3218ac0579ebe12df6f1a07588098;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 9edb7b9801d47e2a1067a7bc20b4d03d
+      - 001c54a296f2e7c925188e2e50dcea46
       X-Runtime:
-      - '0.177388'
+      - '0.748176'
       X-Rack-Cache:
       - miss
     body:
-      encoding: US-ASCII
-      string: ! '{"status":"OK","ssh_keys":[{"id":6484,"name":"darrin@exempla.co.uk"}]}'
+      encoding: UTF-8
+      string: '{"status":"OK","ssh_keys":[{"id":6484,"name":"darrin@exempla.co.uk"}]}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:15:47 GMT
+  recorded_at: Thu, 28 Mar 2013 08:22:10 GMT
 - request:
     method: get
     uri: https://api.digitalocean.com/ssh_keys/6484?api_key=<API_KEY>&client_id=<CLIENT_ID>
@@ -62,7 +62,7 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - ! '*/*; q=0.5, application/xml'
+      - '*/*; q=0.5, application/xml'
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
@@ -75,7 +75,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:15:49 GMT
+      - Thu, 28 Mar 2013 08:22:12 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -91,23 +91,23 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"2ab43a9aee01b3b149c8eb9efca75bfc"'
+      - '"2ab43a9aee01b3b149c8eb9efca75bfc"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFkMDU0MzU5ZWEwZjY0YTU4YTI1MzMwZDg2YzNjYjY0BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgGAaHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXMvNjQ4ND9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--53f038bfcab90df5b09d2bfe1c3bef7748a4e045;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTQ4YTlmNzAyZmIwOTEyZTQ2MDNlZWRhMWVjN2ViNGQ1BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgGAaHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXMvNjQ4ND9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--c7dc7e38f8561fd20e157b739b9309cb307ae289;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - fa2035889e5b019704647fe8b050f4b2
+      - da6f478e2df31e1cc5fa238a6780b27e
       X-Runtime:
-      - '0.153466'
+      - '0.781847'
       X-Rack-Cache:
       - miss
     body:
-      encoding: US-ASCII
-      string: ! '{"status":"OK","ssh_key":{"id":6484,"name":"darrin@exempla.co.uk","ssh_pub_key":"ssh-dss
+      encoding: UTF-8
+      string: '{"status":"OK","ssh_key":{"id":6484,"name":"darrin@exempla.co.uk","ssh_pub_key":"ssh-dss
         AAAAB3NzaC1kc3MAAAEBAOZLyI0m+4wJvqAvqRtcn9apell65nUSSE+xIeafUDC0diqV/wV0tBGOH+4bNVtJ7ZiO1ClXfP1024XcWNv/JhILwEBe0sz7ahvGkBOsKhngi4RU0D8RDe1BnHR24S6z6hN3u60ooGtnDHtUWOH4g/eeT31cLkjg7pHTxEGaC+KYx4OwMCupl7ZfaOsomU/5/pTdv8t/tmGIcOakaLWWzAplwwtV/XO8ZDG9rMhKCndtkJyj2iOifURLRXH3a0DV4za6h87pmTpH+38ezhj4GikyjDjcA0hrYmLu1sbuaPkG0yoGTztcuK5L1J22L6A7fPpPcUQrn/ZPvrTnU6t6GtMAAAAVAPCWKCN8ITAioEhwdLQQVAoXp0gRAAABAQCWJu1uZjIqNXKUxSEL8ZtZeAyziwgOIT7FGWm/NpqdbtTtQVsgYKEQtj3CTyOexrfJ0pFa0f0aS13YVo0gRxm0I3i4cw7j+mEcdDZ5nkZxRNOBc5aCc+16zE8wU/0MPbm7kT+qgUHCioClGH0IlGbbYAsF/rS52ZwEzqHYDCi3kFj6mgEwsWv8HmqhfUg5lqCkftJJYPKCFxruHWynIaONHmSx1cmUp8WaGWXjX9hSF7K6o2RpfF713ERuL5Xbw9nzl9ySmy24fCKoMtpXFR0fZ7iz1qV9N7TZG1GnrqYfVeP1LftZaOcxvp5bJ7mZuF/t40XsNsbPVE1gF6QatKjvAAABAFSghCYM0GIelctLnMlgGDj87TBWMKBQ6d64nXLuYUTYrsdIxIwgrPsjA2Y3+lvjMGcdzqieW70g5F1ei2IlwpeTqXnKOa8QQn25zF/ublO6GpBrWOCx5Pqz8C7yqT4DCidxOICPVoZZB6BMkCkTLpgHdv3CoisJAbtlEr3f5bAVAOHG5p2dudpo5FH6Dc3nH4EeQLMmc9bnH85WNLVeCIqCiZ1Q3GbzUcvKkenYKhDUjPFQbBwpcDt0Zd2YMVfl9snaU4NIRAIB9w+ICEvkJ31Es9UFoft+2TdXOtzj5O9zq8b3OT9JPWt0dbeQxcfYTeZz+yHhnyq8bSPRkV8jkZM=
         darrin@exempla.co.uk"}}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:15:48 GMT
+  recorded_at: Thu, 28 Mar 2013 08:22:12 GMT
 recorded_with: VCR 2.4.0

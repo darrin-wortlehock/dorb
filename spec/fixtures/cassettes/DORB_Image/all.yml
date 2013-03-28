@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - ! '*/*; q=0.5, application/xml'
+      - '*/*; q=0.5, application/xml'
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:15:57 GMT
+      - Thu, 28 Mar 2013 08:22:20 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,23 +37,26 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"7589fcbe5a1fcb30d879fc6706a468d6"'
+      - '"788ce4ecc8c792332d25e9bf2c6cb063"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk2MWNjMTA0MDUyYzA3MmRhNWY0NjgyMjY3NmY5NmE2BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn5odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9pbWFnZXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--0224f5b4e992394482c2fb2f0bde9d43fd2c53a7;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTIyNjRmZGQ2YzZkYjJlZmNjZGUzMGM5NTIzMmViMGJlBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIn5odHRwczovL3d3dy5kaWdpdGFsb2NlYW4uY29tL2FwaS9pbWFnZXM%2FY2xpZW50X2lkPTg0VTlxSHdlMk43M2RFb1BGVnFLeiZhcGlfa2V5PXFROG1wUmlFWWczdU82T3JMVFRlSkQxRHZQR0VRaFZtTWVIdkRyM2RtBjsARg%3D%3D--6a2f9efefb02b3575bd6c6d037e5f42fc057f640;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 98d4f9a2be31190ec0ef9f1c9819325f
+      - f14364e3c2917507d821ad37667ff778
       X-Runtime:
-      - '0.457259'
+      - '0.200133'
       X-Rack-Cache:
       - miss
     body:
-      encoding: US-ASCII
-      string: ! '{"status":"OK","images":[{"id":109578,"name":"test","distribution":"Ubuntu"},{"id":1601,"name":"CentOS
-        5.8 x64","distribution":"CentOS"},{"id":1602,"name":"CentOS 5.8 x32","distribution":"CentOS"},{"id":1605,"name":"CentOS
-        6.0 x32","distribution":"CentOS"},{"id":1606,"name":"Fedora 15 x64","distribution":"Fedora"},{"id":1609,"name":"Ubuntu
+      encoding: UTF-8
+      string: '{"status":"OK","images":[{"id":109578,"name":"test","distribution":"Ubuntu"},{"id":1607,"name":"Gentoo
+        x64","distribution":"Gentoo"},{"id":13632,"name":"Open Suse 12.1 x32","distribution":"openSUSE"},{"id":13863,"name":"Open
+        Suse 12.2 X64","distribution":"openSUSE"},{"id":18414,"name":"Arch Linux 2012-09
+        x64","distribution":"Arch Linux"},{"id":23593,"name":"Arch Linux 2012-09 x64","distribution":"Arch
+        Linux"},{"id":63749,"name":"Gentoo 2013-1 x64","distribution":"Gentoo"},{"id":1601,"name":"CentOS
+        5.8 x64","distribution":"CentOS"},{"id":1602,"name":"CentOS 5.8 x32","distribution":"CentOS"},{"id":1609,"name":"Ubuntu
         11.10 x32 Server","distribution":"Ubuntu"},{"id":1611,"name":"CentOS 6.2 x64","distribution":"CentOS"},{"id":1615,"name":"Fedora
         16 x64 Server","distribution":"Fedora"},{"id":1618,"name":"Fedora 16 x64 Desktop","distribution":"Fedora"},{"id":2676,"name":"Ubuntu
         12.04 x64 Server","distribution":"Ubuntu"},{"id":12573,"name":"Debian 6.0
@@ -71,5 +74,5 @@ http_interactions:
         Server","distribution":"Ubuntu"},{"id":43462,"name":"Ubuntu 11.04x32 Desktop","distribution":"Ubuntu"},{"id":46964,"name":"LAMP
         on Ubuntu 12.04","distribution":"Ubuntu"}]}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:15:55 GMT
+  recorded_at: Thu, 28 Mar 2013 08:22:21 GMT
 recorded_with: VCR 2.4.0

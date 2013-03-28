@@ -8,20 +8,20 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - ! '*/*; q=0.5, application/xml'
+      - '*/*; q=0.5, application/xml'
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
       - Ruby
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Server:
       - nginx
       Date:
-      - Wed, 13 Mar 2013 12:15:50 GMT
+      - Thu, 28 Mar 2013 08:22:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,29 +29,27 @@ http_interactions:
       Connection:
       - keep-alive
       Status:
-      - '200'
+      - '404'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
       Strict-Transport-Security:
       - max-age=31536000
       X-Ua-Compatible:
       - IE=Edge,chrome=1
-      Etag:
-      - ! '"0875697aacb1d5282a7eaa16a330f29e"'
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTVlOTk5MmZmZTVhMjU3NmExMmMyYTNlYjYzN2Q4ZDA0BjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF9aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXMvMD9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--a75b9d08463d9bf982288844a683f5655cc3f8aa;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTE5ZDJkYjc5NzJjMGNkNGVmNTI5NTU1ZTg5ZDcxMTdlBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF9aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvc3NoX2tleXMvMD9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--287b4cfe720f45c231ebe737bf758b6beaf509e6;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 1f396baa50a1d146558f3b2954a13ed5
+      - 45e0da2d4e0979f35ec46af8aadf5534
       X-Runtime:
-      - '0.153002'
+      - '0.769610'
       X-Rack-Cache:
       - miss
     body:
-      encoding: US-ASCII
-      string: ! '{"status":"ERROR","error_message":"No SSH Key Found"}'
+      encoding: UTF-8
+      string: '{"message":"Not Found"}'
     http_version: 
-  recorded_at: Wed, 13 Mar 2013 12:15:48 GMT
+  recorded_at: Thu, 28 Mar 2013 08:22:14 GMT
 recorded_with: VCR 2.4.0
