@@ -56,10 +56,10 @@ This method returns a droplet for a specific droplet id.
 
     DORB::Droplet.find_all_by_name name
     
-#####  New droplet
+#####  Create droplet
 This method allows you to create a new droplet.
 
-    DORB::Droplet.new :name => name, :size => size, :image => image, :region => region, :ssh_keys => [keys]
+    DORB::Droplet.create :name => name, :size => size, :image => image, :region => region, :ssh_keys => [keys]
 
 ##### Reboot droplet
 This method allows you to reboot a droplet. This is the preferred method to use if a server is not responding
