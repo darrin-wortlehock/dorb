@@ -6,6 +6,7 @@ module DORB
 
     def self.included klass
       klass.extend ClassMethods
+      klass.define_attribute :id, :name
     end
 
     module ClassMethods
@@ -14,9 +15,10 @@ module DORB
       attr_accessor :singular_resource_name
       attr_accessor :attribute_names
       attr_accessor :extended_attributes
+
       alias :extended_attributes? :extended_attributes
 
-      def define_attribute names
+      def define_attribute *names
         [names].flatten.each do |name|
           self.attribute_names = [self.attribute_names].flatten.compact << name
           attr_accessor(name)
@@ -101,25 +103,11 @@ module DORB
 
     end
     
-    attr_accessor :id, :name
-
     def initialize( attributes={} )
-      required, optional = split_required_attributes(attributes, [:id, :name])
-      self.id = required[:id]
-      self.name = required[:name]
-    end
-
-    private
-
-    def split_required_attributes(attributes, required)
-      optional_attributes = attributes.symbolize_keys
-      required_attributes = {}
-      required.each do |key|
-        required_attributes[key] = optional_attributes.delete(key) do |missing_key|
-          raise ArgumentError.new("Attribute #{missing_key.inspect} is required")
-        end
+      symbolized_attributes = attributes.symbolize_keys
+      self.class.attribute_names.each do |attribute_name|
+        send(:"#{attribute_name}=", symbolized_attributes[attribute_name.to_sym])
       end
-      [required_attributes, optional_attributes]
     end
 
   end
