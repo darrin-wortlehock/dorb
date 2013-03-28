@@ -6,7 +6,7 @@ describe DORB::Size do
 
   let(:size_attributes) do
     {
-      :id => 1,
+      :id => 35,
       :name => '2GB',
       :memory => 2048,
       :disk => 40,
@@ -16,6 +16,9 @@ describe DORB::Size do
   end
 
   subject { DORB::Size.new size_attributes }
+
+  its(:id) { should == size_attributes[:id] }
+  its(:name) { should == size_attributes[:name] }
 
   its(:memory) { should == size_attributes[:memory] }
   its(:disk) { should == size_attributes[:disk] }
