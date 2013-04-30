@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 28 Mar 2013 08:22:18 GMT
+      - Mon, 29 Apr 2013 23:11:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,17 +41,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTViYTY0ODEwYzZiMjIxOWNiODIzMjc2OWIzNTVhOGFjBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF9aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvZHJvcGxldHMvMD9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--4dce8e98ff0b0032c7704ca4217ef8d2d6cd5932;
+      - _digitalocean2_session_v2=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTdhZmJmZDZhNzAwYmQ2OTIyZjFlNTNiZGRiNzQyZDkzBjsAVEkiEXJlZGlyZWN0X3VybAY7AEZJIgF9aHR0cHM6Ly93d3cuZGlnaXRhbG9jZWFuLmNvbS9hcGkvZHJvcGxldHMvMD9jbGllbnRfaWQ9ODRVOXFId2UyTjczZEVvUEZWcUt6JmFwaV9rZXk9cVE4bXBSaUVZZzN1TzZPckxUVGVKRDFEdlBHRVFoVm1NZUh2RHIzZG0GOwBG--38ade258c053532eb4f0658bbb42e9a8728a440f;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 1936be94ec47bd6ceee7260ef53785a2
+      - f4b70a2dcfe500d5a9513d4c47372b6c
       X-Runtime:
-      - '0.168318'
+      - '0.172946'
       X-Rack-Cache:
       - miss
     body:
       encoding: UTF-8
       string: '{"status":"ERROR","error_message":"No Droplets Found"}'
     http_version: 
-  recorded_at: Thu, 28 Mar 2013 08:22:19 GMT
+  recorded_at: Mon, 29 Apr 2013 23:11:02 GMT
 recorded_with: VCR 2.4.0

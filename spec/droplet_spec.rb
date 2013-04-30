@@ -12,6 +12,7 @@ describe DORB::Droplet do
       :image_id => 420,
       :region_id => 1,
       :size_id => 33,
+      :ip_address => '192.168.1.10',
       :status => 'active'
     }
   end
@@ -24,7 +25,30 @@ describe DORB::Droplet do
   its(:image_id) { should == droplet_attributes[:image_id] }
   its(:region_id) { should == droplet_attributes[:region_id] }
   its(:size_id) { should == droplet_attributes[:size_id] }
+  its(:ip_address) { should == droplet_attributes[:ip_address] }
   its(:status) { should == droplet_attributes[:status] }
 
+  describe '.find_by_ip_address' do
+
+    subject { DORB::Droplet.find_by_ip_address(droplet_attributes[:ip_address]) }
+
+    context 'when no droplet exists with the specified ip' do
+      it 'should raise an APIError' do
+        DORB::Droplet.stub!(:all).and_return([])
+        expect { subject }.to raise_error(DORB::APIError)
+      end
+    end
+
+    context 'when a droplet exists with the specified ip' do
+      let(:other_droplet) { stub(:ip_address => '1.2.3.4') }
+      let(:matching_droplet) { stub(:ip_address => droplet_attributes[:ip_address]) }
+      it 'returns the droplet' do
+        DORB::Droplet.stub(:all).and_return([other_droplet, matching_droplet])
+        should == matching_droplet
+      end
+    end
+
+
+  end
 
 end
