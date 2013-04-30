@@ -52,7 +52,7 @@ This method returns a droplet for a specific droplet id.
 
     DORB::Droplet.find id
 
-    DORB::Droplet.find_by_ip ip_address
+    DORB::Droplet.find_by_ip_address ip_address
 
     DORB::Droplet.find_all_by_name name
     
