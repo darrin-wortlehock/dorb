@@ -14,9 +14,15 @@ module DORB
     define_attribute :status
 
     def self.find_by_ip_address(ip_address)
-      droplet = all.find { |d| d.ip_address == ip_address }
+      droplet = all.detect { |d| d.ip_address == ip_address }
       raise APIError if droplet.nil?
       droplet
+    end
+
+    def self.find_all_by_name(name)
+      droplets = all.select { |d| d.name == name }
+      raise APIError if droplets.empty?
+      droplets
     end
 
   end

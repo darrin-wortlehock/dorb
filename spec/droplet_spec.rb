@@ -28,26 +28,47 @@ describe DORB::Droplet do
   its(:ip_address) { should == droplet_attributes[:ip_address] }
   its(:status) { should == droplet_attributes[:status] }
 
+  let(:other_droplet) { stub(:ip_address => '1.2.3.4', :name => 'OtherDroplet') }
+
   describe '.find_by_ip_address' do
 
     subject { DORB::Droplet.find_by_ip_address(droplet_attributes[:ip_address]) }
 
     context 'when no droplet exists with the specified ip' do
       it 'should raise an APIError' do
-        DORB::Droplet.stub!(:all).and_return([])
+        DORB::Droplet.stub(:all).and_return([other_droplet])
         expect { subject }.to raise_error(DORB::APIError)
       end
     end
 
     context 'when a droplet exists with the specified ip' do
-      let(:other_droplet) { stub(:ip_address => '1.2.3.4') }
-      let(:matching_droplet) { stub(:ip_address => droplet_attributes[:ip_address]) }
+      let(:matching_ip_droplet) { stub(:ip_address => droplet_attributes[:ip_address]) }
       it 'returns the droplet' do
-        DORB::Droplet.stub(:all).and_return([other_droplet, matching_droplet])
-        should == matching_droplet
+        DORB::Droplet.stub(:all).and_return([other_droplet, matching_ip_droplet])
+        should == matching_ip_droplet
       end
     end
 
+  end
+
+  describe '.find_all_by_name' do
+     
+    subject { DORB::Droplet.find_all_by_name(droplet_attributes[:name]) }
+
+    context 'when no droplet exists with the specified name' do
+      it 'should raise an APIError' do
+        DORB::Droplet.stub(:all).and_return([other_droplet])
+        expect { subject }.to raise_error(DORB::APIError)
+      end
+    end
+
+    context 'when a droplet exists with the specified name' do
+      let(:matching_name_droplet) { stub(:name => droplet_attributes[:name]) }
+      it 'returns the droplet' do
+        DORB::Droplet.stub(:all).and_return([other_droplet, matching_name_droplet])
+        should == [matching_name_droplet]
+      end
+    end
 
   end
 
